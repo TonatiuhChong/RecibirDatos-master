@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValoresActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Variable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre de la variable"/>
+    <EditText
+        android:id="@+id/Valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor de la variable"/>
+
+    <Button
+        android:id="@+id/BtnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"/>
+    <Button
+        android:id="@+id/Btnvolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/Mirror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nada que mostrar"/>
+
+
+</LinearLayout>
