@@ -21,7 +21,7 @@ public class ValoresActivity extends AppCompatActivity implements View.OnClickLi
 
     private EditText Child,Value;
     private TextView Resultado;
-    private DatabaseReference ref;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class ValoresActivity extends AppCompatActivity implements View.OnClickLi
         String hijo=Child.getText().toString();
         String valor=Value.getText().toString();
 
-        ref= FirebaseDatabase.getInstance().getReference().child("Pruebas");
+        DatabaseReference ref= FirebaseDatabase.getInstance().getReference().child("Prueba");
         Map<String,Object> map= new HashMap<String, Object>();
         map.put(hijo,valor);
         ref.updateChildren(map);
